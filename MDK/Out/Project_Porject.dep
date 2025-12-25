@@ -1,0 +1,630 @@
+Dependencies for Project 'Project', Target 'Porject': (DO NOT MODIFY !)
+CompilerVersion: 6220000::V6.22::ARMCLANG
+F (..\driver\adc.c)(0x6941FBE7)(-xc -std=c11 --target=arm-arm-none-eabi -mcpu=cortex-m0 -c-fno-rtti -flto -Werror -fsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -Oz -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../Libraries/PT32Y003x_FWLib/inc -I ../Libraries/SYSTEM -I ../Libraries/CMSIS -I ../driver -I ../RTT -I ../MDK -I ../public/inc -I ../peripheral -I ../../cx2541-Lzb_gesture-I./RTE/_Porject-ID:/keil5/ARM/pack/ARM/CMSIS/6.1.0/CMSIS/Core/Include-D__UVISION_VERSION="540" -D_RTE_ -DUSE_STDPERIPH_DRIVER -DUSE_FULL_ASSERT-o ./out/adc.o -MMD)
+I (..\driver\adc.h)(0x6941FBE7)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x.h)(0x685DEAE0)
+I (..\Libraries\CMSIS\core_cm0.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32_Type.h)(0x685DEAE0)
+I (..\Libraries\SYSTEM\system_PT32Y003x.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_conf.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_gpio.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_tim.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_nvic.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_uart.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_pwm.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_wdg.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_i2c.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_spi.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_crc.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_immc.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_adc.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_pwr.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_rcc.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_id.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_exti.h)(0x685DEAE0)
+I (..\driver\tick.h)(0x685DEAE0)
+I (..\driver\uart.h)(0x6861DFCE)
+I (..\..\cx2541-Lzb_gesture\config.h)(0x694A5BC5)
+I (..\peripheral\protocol.h)(0x694B4362)
+I (..\peripheral\clap.h)(0x694B3B13)
+I (..\peripheral\slide.h)(0x694B44ED)
+F (..\driver\adc.h)(0x6941FBE7)()
+F (..\driver\uart.c)(0x6937DAF1)(-xc -std=c11 --target=arm-arm-none-eabi -mcpu=cortex-m0 -c-fno-rtti -flto -Werror -fsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -Oz -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../Libraries/PT32Y003x_FWLib/inc -I ../Libraries/SYSTEM -I ../Libraries/CMSIS -I ../driver -I ../RTT -I ../MDK -I ../public/inc -I ../peripheral -I ../../cx2541-Lzb_gesture-I./RTE/_Porject-ID:/keil5/ARM/pack/ARM/CMSIS/6.1.0/CMSIS/Core/Include-D__UVISION_VERSION="540" -D_RTE_ -DUSE_STDPERIPH_DRIVER -DUSE_FULL_ASSERT-o ./out/uart.o -MMD)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x.h)(0x685DEAE0)
+I (..\Libraries\CMSIS\core_cm0.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32_Type.h)(0x685DEAE0)
+I (..\Libraries\SYSTEM\system_PT32Y003x.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_conf.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_gpio.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_tim.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_nvic.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_uart.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_pwm.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_wdg.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_i2c.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_spi.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_crc.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_immc.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_adc.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_pwr.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_rcc.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_id.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_exti.h)(0x685DEAE0)
+I (..\driver\uart.h)(0x6861DFCE)
+I (..\..\cx2541-Lzb_gesture\config.h)(0x694A5BC5)
+I (..\driver\tick.h)(0x685DEAE0)
+I (..\peripheral\protocol.h)(0x694B4362)
+I (..\peripheral\clap.h)(0x694B3B13)
+I (..\peripheral\slide.h)(0x694B44ED)
+F (..\driver\uart.h)(0x6861DFCE)()
+F (..\driver\wdg.c)(0x685DEAE0)(-xc -std=c11 --target=arm-arm-none-eabi -mcpu=cortex-m0 -c-fno-rtti -flto -Werror -fsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -Oz -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../Libraries/PT32Y003x_FWLib/inc -I ../Libraries/SYSTEM -I ../Libraries/CMSIS -I ../driver -I ../RTT -I ../MDK -I ../public/inc -I ../peripheral -I ../../cx2541-Lzb_gesture-I./RTE/_Porject-ID:/keil5/ARM/pack/ARM/CMSIS/6.1.0/CMSIS/Core/Include-D__UVISION_VERSION="540" -D_RTE_ -DUSE_STDPERIPH_DRIVER -DUSE_FULL_ASSERT-o ./out/wdg.o -MMD)
+I (..\driver\wdg.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x.h)(0x685DEAE0)
+I (..\Libraries\CMSIS\core_cm0.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32_Type.h)(0x685DEAE0)
+I (..\Libraries\SYSTEM\system_PT32Y003x.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_conf.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_gpio.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_tim.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_nvic.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_uart.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_pwm.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_wdg.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_i2c.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_spi.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_crc.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_immc.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_adc.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_pwr.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_rcc.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_id.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_exti.h)(0x685DEAE0)
+F (..\driver\wdg.h)(0x685DEAE0)()
+F (..\driver\tick.c)(0x685DEAE0)(-xc -std=c11 --target=arm-arm-none-eabi -mcpu=cortex-m0 -c-fno-rtti -flto -Werror -fsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -Oz -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../Libraries/PT32Y003x_FWLib/inc -I ../Libraries/SYSTEM -I ../Libraries/CMSIS -I ../driver -I ../RTT -I ../MDK -I ../public/inc -I ../peripheral -I ../../cx2541-Lzb_gesture-I./RTE/_Porject-ID:/keil5/ARM/pack/ARM/CMSIS/6.1.0/CMSIS/Core/Include-D__UVISION_VERSION="540" -D_RTE_ -DUSE_STDPERIPH_DRIVER -DUSE_FULL_ASSERT-o ./out/tick.o -MMD)
+I (..\driver\tick.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x.h)(0x685DEAE0)
+I (..\Libraries\CMSIS\core_cm0.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32_Type.h)(0x685DEAE0)
+I (..\Libraries\SYSTEM\system_PT32Y003x.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_conf.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_gpio.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_tim.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_nvic.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_uart.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_pwm.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_wdg.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_i2c.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_spi.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_crc.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_immc.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_adc.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_pwr.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_rcc.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_id.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_exti.h)(0x685DEAE0)
+F (..\driver\tick.h)(0x685DEAE0)()
+F (..\config.h)(0x694A5BC5)()
+F (..\base.h)(0x685DEAE0)()
+F (..\peripheral\crc.c)(0x685DEAE0)(-xc -std=c11 --target=arm-arm-none-eabi -mcpu=cortex-m0 -c-fno-rtti -flto -Werror -fsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -Oz -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../Libraries/PT32Y003x_FWLib/inc -I ../Libraries/SYSTEM -I ../Libraries/CMSIS -I ../driver -I ../RTT -I ../MDK -I ../public/inc -I ../peripheral -I ../../cx2541-Lzb_gesture-I./RTE/_Porject-ID:/keil5/ARM/pack/ARM/CMSIS/6.1.0/CMSIS/Core/Include-D__UVISION_VERSION="540" -D_RTE_ -DUSE_STDPERIPH_DRIVER -DUSE_FULL_ASSERT-o ./out/crc.o -MMD)
+I (..\peripheral\crc.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x.h)(0x685DEAE0)
+I (..\Libraries\CMSIS\core_cm0.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32_Type.h)(0x685DEAE0)
+I (..\Libraries\SYSTEM\system_PT32Y003x.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_conf.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_gpio.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_tim.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_nvic.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_uart.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_pwm.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_wdg.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_i2c.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_spi.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_crc.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_immc.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_adc.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_pwr.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_rcc.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_id.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_exti.h)(0x685DEAE0)
+F (..\peripheral\crc.h)(0x685DEAE0)()
+F (..\peripheral\main.c)(0x694B44ED)(-xc -std=c11 --target=arm-arm-none-eabi -mcpu=cortex-m0 -c-fno-rtti -flto -Werror -fsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -Oz -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../Libraries/PT32Y003x_FWLib/inc -I ../Libraries/SYSTEM -I ../Libraries/CMSIS -I ../driver -I ../RTT -I ../MDK -I ../public/inc -I ../peripheral -I ../../cx2541-Lzb_gesture-I./RTE/_Porject-ID:/keil5/ARM/pack/ARM/CMSIS/6.1.0/CMSIS/Core/Include-D__UVISION_VERSION="540" -D_RTE_ -DUSE_STDPERIPH_DRIVER -DUSE_FULL_ASSERT-o ./out/main.o -MMD)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x.h)(0x685DEAE0)
+I (..\Libraries\CMSIS\core_cm0.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32_Type.h)(0x685DEAE0)
+I (..\Libraries\SYSTEM\system_PT32Y003x.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_conf.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_gpio.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_tim.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_nvic.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_uart.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_pwm.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_wdg.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_i2c.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_spi.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_crc.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_immc.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_adc.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_pwr.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_rcc.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_id.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_exti.h)(0x685DEAE0)
+I (..\driver\tick.h)(0x685DEAE0)
+I (..\driver\wdg.h)(0x685DEAE0)
+I (..\driver\adc.h)(0x6941FBE7)
+I (..\driver\uart.h)(0x6861DFCE)
+I (..\..\cx2541-Lzb_gesture\config.h)(0x694A5BC5)
+I (..\peripheral\protocol.h)(0x694B4362)
+I (..\peripheral\clap.h)(0x694B3B13)
+I (..\peripheral\slide.h)(0x694B44ED)
+I (..\peripheral\crc.h)(0x685DEAE0)
+I (..\..\cx2541-Lzb_gesture\public.h)(0x694B44ED)
+F (..\peripheral\protocol.c)(0x694B4362)(-xc -std=c11 --target=arm-arm-none-eabi -mcpu=cortex-m0 -c-fno-rtti -flto -Werror -fsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -Oz -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../Libraries/PT32Y003x_FWLib/inc -I ../Libraries/SYSTEM -I ../Libraries/CMSIS -I ../driver -I ../RTT -I ../MDK -I ../public/inc -I ../peripheral -I ../../cx2541-Lzb_gesture-I./RTE/_Porject-ID:/keil5/ARM/pack/ARM/CMSIS/6.1.0/CMSIS/Core/Include-D__UVISION_VERSION="540" -D_RTE_ -DUSE_STDPERIPH_DRIVER -DUSE_FULL_ASSERT-o ./out/protocol.o -MMD)
+I (..\..\cx2541-Lzb_gesture\config.h)(0x694A5BC5)
+I (..\peripheral\protocol.h)(0x694B4362)
+I (..\peripheral\clap.h)(0x694B3B13)
+I (..\peripheral\slide.h)(0x694B44ED)
+I (..\driver\uart.h)(0x6861DFCE)
+I (..\driver\tick.h)(0x685DEAE0)
+I (..\peripheral\crc.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x.h)(0x685DEAE0)
+I (..\Libraries\CMSIS\core_cm0.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32_Type.h)(0x685DEAE0)
+I (..\Libraries\SYSTEM\system_PT32Y003x.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_conf.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_gpio.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_tim.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_nvic.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_uart.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_pwm.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_wdg.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_i2c.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_spi.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_crc.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_immc.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_adc.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_pwr.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_rcc.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_id.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_exti.h)(0x685DEAE0)
+I (..\public\inc\buildInfo.h)(0x5E0B7080)
+F (..\peripheral\protocol.h)(0x694B4362)()
+F (..\public.h)(0x694B44ED)()
+F (..\peripheral\clap.c)(0x694A5AC0)(-xc -std=c11 --target=arm-arm-none-eabi -mcpu=cortex-m0 -c-fno-rtti -flto -Werror -fsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -Oz -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../Libraries/PT32Y003x_FWLib/inc -I ../Libraries/SYSTEM -I ../Libraries/CMSIS -I ../driver -I ../RTT -I ../MDK -I ../public/inc -I ../peripheral -I ../../cx2541-Lzb_gesture-I./RTE/_Porject-ID:/keil5/ARM/pack/ARM/CMSIS/6.1.0/CMSIS/Core/Include-D__UVISION_VERSION="540" -D_RTE_ -DUSE_STDPERIPH_DRIVER -DUSE_FULL_ASSERT-o ./out/clap.o -MMD)
+I (..\peripheral\clap.h)(0x694B3B13)
+I (..\driver\uart.h)(0x6861DFCE)
+I (..\..\cx2541-Lzb_gesture\config.h)(0x694A5BC5)
+I (..\driver\tick.h)(0x685DEAE0)
+I (..\peripheral\protocol.h)(0x694B4362)
+I (..\peripheral\slide.h)(0x694B44ED)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x.h)(0x685DEAE0)
+I (..\Libraries\CMSIS\core_cm0.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32_Type.h)(0x685DEAE0)
+I (..\Libraries\SYSTEM\system_PT32Y003x.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_conf.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_gpio.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_tim.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_nvic.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_uart.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_pwm.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_wdg.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_i2c.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_spi.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_crc.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_immc.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_adc.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_pwr.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_rcc.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_id.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_exti.h)(0x685DEAE0)
+F (..\peripheral\clap.h)(0x694B3B13)()
+F (..\peripheral\slide.c)(0x694B4362)(-xc -std=c11 --target=arm-arm-none-eabi -mcpu=cortex-m0 -c-fno-rtti -flto -Werror -fsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -Oz -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../Libraries/PT32Y003x_FWLib/inc -I ../Libraries/SYSTEM -I ../Libraries/CMSIS -I ../driver -I ../RTT -I ../MDK -I ../public/inc -I ../peripheral -I ../../cx2541-Lzb_gesture-I./RTE/_Porject-ID:/keil5/ARM/pack/ARM/CMSIS/6.1.0/CMSIS/Core/Include-D__UVISION_VERSION="540" -D_RTE_ -DUSE_STDPERIPH_DRIVER -DUSE_FULL_ASSERT-o ./out/slide.o -MMD)
+I (..\peripheral\slide.h)(0x694B44ED)
+I (..\driver\uart.h)(0x6861DFCE)
+I (..\..\cx2541-Lzb_gesture\config.h)(0x694A5BC5)
+I (..\driver\tick.h)(0x685DEAE0)
+I (..\peripheral\protocol.h)(0x694B4362)
+I (..\peripheral\clap.h)(0x694B3B13)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x.h)(0x685DEAE0)
+I (..\Libraries\CMSIS\core_cm0.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32_Type.h)(0x685DEAE0)
+I (..\Libraries\SYSTEM\system_PT32Y003x.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_conf.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_gpio.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_tim.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_nvic.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_uart.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_pwm.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_wdg.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_i2c.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_spi.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_crc.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_immc.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_adc.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_pwr.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_rcc.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_id.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_exti.h)(0x685DEAE0)
+F (..\peripheral\slide.h)(0x694B44ED)()
+F (..\Libraries\SYSTEM\startup_PT32Y003x.s)(0x685DEAE0)(--cpu Cortex-M0 -g --pd "__MICROLIB SETA 1" --diag_suppress=A1950W-I.\RTE\_Porject-ID:\keil5\ARM\pack\ARM\CMSIS\6.1.0\CMSIS\Core\Include--pd "__UVISION_VERSION SETA 540"--pd "_RTE_ SETA 1"--list .\list\startup_pt32y003x.lst--xref -o .\out\startup_pt32y003x.o--depend .\out\startup_pt32y003x.d)
+F (..\Libraries\SYSTEM\system_PT32Y003x.h)(0x685DEAE0)()
+F (..\Libraries\SYSTEM\system_PT32Y003x.c)(0x685DEAE0)(-xc -std=c11 --target=arm-arm-none-eabi -mcpu=cortex-m0 -c-fno-rtti -flto -Werror -fsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -Oz -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../Libraries/PT32Y003x_FWLib/inc -I ../Libraries/SYSTEM -I ../Libraries/CMSIS -I ../driver -I ../RTT -I ../MDK -I ../public/inc -I ../peripheral -I ../../cx2541-Lzb_gesture-I./RTE/_Porject-ID:/keil5/ARM/pack/ARM/CMSIS/6.1.0/CMSIS/Core/Include-D__UVISION_VERSION="540" -D_RTE_ -DUSE_STDPERIPH_DRIVER -DUSE_FULL_ASSERT-o ./out/system_pt32y003x.o -MMD)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x.h)(0x685DEAE0)
+I (..\Libraries\CMSIS\core_cm0.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32_Type.h)(0x685DEAE0)
+I (..\Libraries\SYSTEM\system_PT32Y003x.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_conf.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_gpio.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_tim.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_nvic.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_uart.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_pwm.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_wdg.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_i2c.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_spi.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_crc.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_immc.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_adc.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_pwr.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_rcc.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_id.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_exti.h)(0x685DEAE0)
+F (..\Libraries\Retarget\PT32Y003x_retarget.c)(0x685DEAE0)(-xc -std=c11 --target=arm-arm-none-eabi -mcpu=cortex-m0 -c-fno-rtti -flto -Werror -fsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -Oz -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../Libraries/PT32Y003x_FWLib/inc -I ../Libraries/SYSTEM -I ../Libraries/CMSIS -I ../driver -I ../RTT -I ../MDK -I ../public/inc -I ../peripheral -I ../../cx2541-Lzb_gesture-I./RTE/_Porject-ID:/keil5/ARM/pack/ARM/CMSIS/6.1.0/CMSIS/Core/Include-D__UVISION_VERSION="540" -D_RTE_ -DUSE_STDPERIPH_DRIVER -DUSE_FULL_ASSERT-o ./out/pt32y003x_retarget.o -MMD)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x.h)(0x685DEAE0)
+I (..\Libraries\CMSIS\core_cm0.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32_Type.h)(0x685DEAE0)
+I (..\Libraries\SYSTEM\system_PT32Y003x.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_conf.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_gpio.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_tim.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_nvic.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_uart.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_pwm.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_wdg.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_i2c.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_spi.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_crc.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_immc.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_adc.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_pwr.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_rcc.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_id.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_exti.h)(0x685DEAE0)
+F (..\Libraries\PT32Y003x_FWLib\src\PT32Y003x_adc.c)(0x685DEAE0)(-xc -std=c11 --target=arm-arm-none-eabi -mcpu=cortex-m0 -c-fno-rtti -flto -Werror -fsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -Oz -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../Libraries/PT32Y003x_FWLib/inc -I ../Libraries/SYSTEM -I ../Libraries/CMSIS -I ../driver -I ../RTT -I ../MDK -I ../public/inc -I ../peripheral -I ../../cx2541-Lzb_gesture-I./RTE/_Porject-ID:/keil5/ARM/pack/ARM/CMSIS/6.1.0/CMSIS/Core/Include-D__UVISION_VERSION="540" -D_RTE_ -DUSE_STDPERIPH_DRIVER -DUSE_FULL_ASSERT-o ./out/pt32y003x_adc.o -MMD)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_adc.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x.h)(0x685DEAE0)
+I (..\Libraries\CMSIS\core_cm0.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32_Type.h)(0x685DEAE0)
+I (..\Libraries\SYSTEM\system_PT32Y003x.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_conf.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_gpio.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_tim.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_nvic.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_uart.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_pwm.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_wdg.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_i2c.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_spi.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_crc.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_immc.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_pwr.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_rcc.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_id.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_exti.h)(0x685DEAE0)
+F (..\Libraries\PT32Y003x_FWLib\src\PT32Y003x_crc.c)(0x685DEAE0)(-xc -std=c11 --target=arm-arm-none-eabi -mcpu=cortex-m0 -c-fno-rtti -flto -Werror -fsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -Oz -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../Libraries/PT32Y003x_FWLib/inc -I ../Libraries/SYSTEM -I ../Libraries/CMSIS -I ../driver -I ../RTT -I ../MDK -I ../public/inc -I ../peripheral -I ../../cx2541-Lzb_gesture-I./RTE/_Porject-ID:/keil5/ARM/pack/ARM/CMSIS/6.1.0/CMSIS/Core/Include-D__UVISION_VERSION="540" -D_RTE_ -DUSE_STDPERIPH_DRIVER -DUSE_FULL_ASSERT-o ./out/pt32y003x_crc.o -MMD)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_crc.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x.h)(0x685DEAE0)
+I (..\Libraries\CMSIS\core_cm0.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32_Type.h)(0x685DEAE0)
+I (..\Libraries\SYSTEM\system_PT32Y003x.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_conf.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_gpio.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_tim.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_nvic.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_uart.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_pwm.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_wdg.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_i2c.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_spi.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_immc.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_adc.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_pwr.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_rcc.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_id.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_exti.h)(0x685DEAE0)
+F (..\Libraries\PT32Y003x_FWLib\src\PT32Y003x_exti.c)(0x685DEAE0)(-xc -std=c11 --target=arm-arm-none-eabi -mcpu=cortex-m0 -c-fno-rtti -flto -Werror -fsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -Oz -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../Libraries/PT32Y003x_FWLib/inc -I ../Libraries/SYSTEM -I ../Libraries/CMSIS -I ../driver -I ../RTT -I ../MDK -I ../public/inc -I ../peripheral -I ../../cx2541-Lzb_gesture-I./RTE/_Porject-ID:/keil5/ARM/pack/ARM/CMSIS/6.1.0/CMSIS/Core/Include-D__UVISION_VERSION="540" -D_RTE_ -DUSE_STDPERIPH_DRIVER -DUSE_FULL_ASSERT-o ./out/pt32y003x_exti.o -MMD)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_exti.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x.h)(0x685DEAE0)
+I (..\Libraries\CMSIS\core_cm0.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32_Type.h)(0x685DEAE0)
+I (..\Libraries\SYSTEM\system_PT32Y003x.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_conf.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_gpio.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_tim.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_nvic.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_uart.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_pwm.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_wdg.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_i2c.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_spi.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_crc.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_immc.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_adc.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_pwr.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_rcc.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_id.h)(0x685DEAE0)
+F (..\Libraries\PT32Y003x_FWLib\src\PT32Y003x_gpio.c)(0x685DEAE0)(-xc -std=c11 --target=arm-arm-none-eabi -mcpu=cortex-m0 -c-fno-rtti -flto -Werror -fsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -Oz -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../Libraries/PT32Y003x_FWLib/inc -I ../Libraries/SYSTEM -I ../Libraries/CMSIS -I ../driver -I ../RTT -I ../MDK -I ../public/inc -I ../peripheral -I ../../cx2541-Lzb_gesture-I./RTE/_Porject-ID:/keil5/ARM/pack/ARM/CMSIS/6.1.0/CMSIS/Core/Include-D__UVISION_VERSION="540" -D_RTE_ -DUSE_STDPERIPH_DRIVER -DUSE_FULL_ASSERT-o ./out/pt32y003x_gpio.o -MMD)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_gpio.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x.h)(0x685DEAE0)
+I (..\Libraries\CMSIS\core_cm0.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32_Type.h)(0x685DEAE0)
+I (..\Libraries\SYSTEM\system_PT32Y003x.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_conf.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_tim.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_nvic.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_uart.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_pwm.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_wdg.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_i2c.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_spi.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_crc.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_immc.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_adc.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_pwr.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_rcc.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_id.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_exti.h)(0x685DEAE0)
+F (..\Libraries\PT32Y003x_FWLib\src\PT32Y003x_i2c.c)(0x685DEAE0)(-xc -std=c11 --target=arm-arm-none-eabi -mcpu=cortex-m0 -c-fno-rtti -flto -Werror -fsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -Oz -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../Libraries/PT32Y003x_FWLib/inc -I ../Libraries/SYSTEM -I ../Libraries/CMSIS -I ../driver -I ../RTT -I ../MDK -I ../public/inc -I ../peripheral -I ../../cx2541-Lzb_gesture-I./RTE/_Porject-ID:/keil5/ARM/pack/ARM/CMSIS/6.1.0/CMSIS/Core/Include-D__UVISION_VERSION="540" -D_RTE_ -DUSE_STDPERIPH_DRIVER -DUSE_FULL_ASSERT-o ./out/pt32y003x_i2c.o -MMD)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_i2c.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x.h)(0x685DEAE0)
+I (..\Libraries\CMSIS\core_cm0.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32_Type.h)(0x685DEAE0)
+I (..\Libraries\SYSTEM\system_PT32Y003x.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_conf.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_gpio.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_tim.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_nvic.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_uart.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_pwm.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_wdg.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_spi.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_crc.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_immc.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_adc.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_pwr.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_rcc.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_id.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_exti.h)(0x685DEAE0)
+F (..\Libraries\PT32Y003x_FWLib\src\PT32Y003x_id.c)(0x685DEAE0)(-xc -std=c11 --target=arm-arm-none-eabi -mcpu=cortex-m0 -c-fno-rtti -flto -Werror -fsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -Oz -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../Libraries/PT32Y003x_FWLib/inc -I ../Libraries/SYSTEM -I ../Libraries/CMSIS -I ../driver -I ../RTT -I ../MDK -I ../public/inc -I ../peripheral -I ../../cx2541-Lzb_gesture-I./RTE/_Porject-ID:/keil5/ARM/pack/ARM/CMSIS/6.1.0/CMSIS/Core/Include-D__UVISION_VERSION="540" -D_RTE_ -DUSE_STDPERIPH_DRIVER -DUSE_FULL_ASSERT-o ./out/pt32y003x_id.o -MMD)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_id.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x.h)(0x685DEAE0)
+I (..\Libraries\CMSIS\core_cm0.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32_Type.h)(0x685DEAE0)
+I (..\Libraries\SYSTEM\system_PT32Y003x.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_conf.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_gpio.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_tim.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_nvic.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_uart.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_pwm.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_wdg.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_i2c.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_spi.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_crc.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_immc.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_adc.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_pwr.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_rcc.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_exti.h)(0x685DEAE0)
+F (..\Libraries\PT32Y003x_FWLib\src\PT32Y003x_immc.c)(0x685DEAE0)(-xc -std=c11 --target=arm-arm-none-eabi -mcpu=cortex-m0 -c-fno-rtti -flto -Werror -fsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -Oz -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../Libraries/PT32Y003x_FWLib/inc -I ../Libraries/SYSTEM -I ../Libraries/CMSIS -I ../driver -I ../RTT -I ../MDK -I ../public/inc -I ../peripheral -I ../../cx2541-Lzb_gesture-I./RTE/_Porject-ID:/keil5/ARM/pack/ARM/CMSIS/6.1.0/CMSIS/Core/Include-D__UVISION_VERSION="540" -D_RTE_ -DUSE_STDPERIPH_DRIVER -DUSE_FULL_ASSERT-o ./out/pt32y003x_immc.o -MMD)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_immc.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x.h)(0x685DEAE0)
+I (..\Libraries\CMSIS\core_cm0.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32_Type.h)(0x685DEAE0)
+I (..\Libraries\SYSTEM\system_PT32Y003x.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_conf.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_gpio.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_tim.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_nvic.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_uart.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_pwm.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_wdg.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_i2c.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_spi.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_crc.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_adc.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_pwr.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_rcc.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_id.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_exti.h)(0x685DEAE0)
+F (..\Libraries\PT32Y003x_FWLib\src\PT32Y003x_pwm.c)(0x685DEAE0)(-xc -std=c11 --target=arm-arm-none-eabi -mcpu=cortex-m0 -c-fno-rtti -flto -Werror -fsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -Oz -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../Libraries/PT32Y003x_FWLib/inc -I ../Libraries/SYSTEM -I ../Libraries/CMSIS -I ../driver -I ../RTT -I ../MDK -I ../public/inc -I ../peripheral -I ../../cx2541-Lzb_gesture-I./RTE/_Porject-ID:/keil5/ARM/pack/ARM/CMSIS/6.1.0/CMSIS/Core/Include-D__UVISION_VERSION="540" -D_RTE_ -DUSE_STDPERIPH_DRIVER -DUSE_FULL_ASSERT-o ./out/pt32y003x_pwm.o -MMD)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_pwm.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x.h)(0x685DEAE0)
+I (..\Libraries\CMSIS\core_cm0.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32_Type.h)(0x685DEAE0)
+I (..\Libraries\SYSTEM\system_PT32Y003x.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_conf.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_gpio.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_tim.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_nvic.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_uart.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_wdg.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_i2c.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_spi.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_crc.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_immc.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_adc.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_pwr.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_rcc.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_id.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_exti.h)(0x685DEAE0)
+F (..\Libraries\PT32Y003x_FWLib\src\PT32Y003x_pwr.c)(0x685DEAE0)(-xc -std=c11 --target=arm-arm-none-eabi -mcpu=cortex-m0 -c-fno-rtti -flto -Werror -fsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -Oz -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../Libraries/PT32Y003x_FWLib/inc -I ../Libraries/SYSTEM -I ../Libraries/CMSIS -I ../driver -I ../RTT -I ../MDK -I ../public/inc -I ../peripheral -I ../../cx2541-Lzb_gesture-I./RTE/_Porject-ID:/keil5/ARM/pack/ARM/CMSIS/6.1.0/CMSIS/Core/Include-D__UVISION_VERSION="540" -D_RTE_ -DUSE_STDPERIPH_DRIVER -DUSE_FULL_ASSERT-o ./out/pt32y003x_pwr.o -MMD)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_pwr.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x.h)(0x685DEAE0)
+I (..\Libraries\CMSIS\core_cm0.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32_Type.h)(0x685DEAE0)
+I (..\Libraries\SYSTEM\system_PT32Y003x.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_conf.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_gpio.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_tim.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_nvic.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_uart.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_pwm.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_wdg.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_i2c.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_spi.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_crc.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_immc.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_adc.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_rcc.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_id.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_exti.h)(0x685DEAE0)
+F (..\Libraries\PT32Y003x_FWLib\src\PT32Y003x_rcc.c)(0x685DEAE0)(-xc -std=c11 --target=arm-arm-none-eabi -mcpu=cortex-m0 -c-fno-rtti -flto -Werror -fsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -Oz -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../Libraries/PT32Y003x_FWLib/inc -I ../Libraries/SYSTEM -I ../Libraries/CMSIS -I ../driver -I ../RTT -I ../MDK -I ../public/inc -I ../peripheral -I ../../cx2541-Lzb_gesture-I./RTE/_Porject-ID:/keil5/ARM/pack/ARM/CMSIS/6.1.0/CMSIS/Core/Include-D__UVISION_VERSION="540" -D_RTE_ -DUSE_STDPERIPH_DRIVER -DUSE_FULL_ASSERT-o ./out/pt32y003x_rcc.o -MMD)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_rcc.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x.h)(0x685DEAE0)
+I (..\Libraries\CMSIS\core_cm0.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32_Type.h)(0x685DEAE0)
+I (..\Libraries\SYSTEM\system_PT32Y003x.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_conf.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_gpio.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_tim.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_nvic.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_uart.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_pwm.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_wdg.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_i2c.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_spi.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_crc.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_immc.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_adc.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_pwr.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_id.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_exti.h)(0x685DEAE0)
+F (..\Libraries\PT32Y003x_FWLib\src\PT32Y003x_spi.c)(0x685DEAE0)(-xc -std=c11 --target=arm-arm-none-eabi -mcpu=cortex-m0 -c-fno-rtti -flto -Werror -fsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -Oz -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../Libraries/PT32Y003x_FWLib/inc -I ../Libraries/SYSTEM -I ../Libraries/CMSIS -I ../driver -I ../RTT -I ../MDK -I ../public/inc -I ../peripheral -I ../../cx2541-Lzb_gesture-I./RTE/_Porject-ID:/keil5/ARM/pack/ARM/CMSIS/6.1.0/CMSIS/Core/Include-D__UVISION_VERSION="540" -D_RTE_ -DUSE_STDPERIPH_DRIVER -DUSE_FULL_ASSERT-o ./out/pt32y003x_spi.o -MMD)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_spi.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x.h)(0x685DEAE0)
+I (..\Libraries\CMSIS\core_cm0.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32_Type.h)(0x685DEAE0)
+I (..\Libraries\SYSTEM\system_PT32Y003x.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_conf.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_gpio.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_tim.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_nvic.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_uart.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_pwm.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_wdg.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_i2c.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_crc.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_immc.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_adc.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_pwr.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_rcc.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_id.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_exti.h)(0x685DEAE0)
+F (..\Libraries\PT32Y003x_FWLib\src\PT32Y003x_tim.c)(0x685DEAE0)(-xc -std=c11 --target=arm-arm-none-eabi -mcpu=cortex-m0 -c-fno-rtti -flto -Werror -fsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -Oz -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../Libraries/PT32Y003x_FWLib/inc -I ../Libraries/SYSTEM -I ../Libraries/CMSIS -I ../driver -I ../RTT -I ../MDK -I ../public/inc -I ../peripheral -I ../../cx2541-Lzb_gesture-I./RTE/_Porject-ID:/keil5/ARM/pack/ARM/CMSIS/6.1.0/CMSIS/Core/Include-D__UVISION_VERSION="540" -D_RTE_ -DUSE_STDPERIPH_DRIVER -DUSE_FULL_ASSERT-o ./out/pt32y003x_tim.o -MMD)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_tim.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x.h)(0x685DEAE0)
+I (..\Libraries\CMSIS\core_cm0.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32_Type.h)(0x685DEAE0)
+I (..\Libraries\SYSTEM\system_PT32Y003x.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_conf.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_gpio.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_nvic.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_uart.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_pwm.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_wdg.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_i2c.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_spi.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_crc.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_immc.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_adc.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_pwr.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_rcc.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_id.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_exti.h)(0x685DEAE0)
+F (..\Libraries\PT32Y003x_FWLib\src\PT32Y003x_uart.c)(0x685DEAE0)(-xc -std=c11 --target=arm-arm-none-eabi -mcpu=cortex-m0 -c-fno-rtti -flto -Werror -fsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -Oz -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../Libraries/PT32Y003x_FWLib/inc -I ../Libraries/SYSTEM -I ../Libraries/CMSIS -I ../driver -I ../RTT -I ../MDK -I ../public/inc -I ../peripheral -I ../../cx2541-Lzb_gesture-I./RTE/_Porject-ID:/keil5/ARM/pack/ARM/CMSIS/6.1.0/CMSIS/Core/Include-D__UVISION_VERSION="540" -D_RTE_ -DUSE_STDPERIPH_DRIVER -DUSE_FULL_ASSERT-o ./out/pt32y003x_uart.o -MMD)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_uart.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x.h)(0x685DEAE0)
+I (..\Libraries\CMSIS\core_cm0.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32_Type.h)(0x685DEAE0)
+I (..\Libraries\SYSTEM\system_PT32Y003x.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_conf.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_gpio.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_tim.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_nvic.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_pwm.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_wdg.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_i2c.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_spi.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_crc.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_immc.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_adc.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_pwr.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_rcc.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_id.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_exti.h)(0x685DEAE0)
+F (..\Libraries\PT32Y003x_FWLib\src\PT32Y003x_wdg.c)(0x685DEAE0)(-xc -std=c11 --target=arm-arm-none-eabi -mcpu=cortex-m0 -c-fno-rtti -flto -Werror -fsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -Oz -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../Libraries/PT32Y003x_FWLib/inc -I ../Libraries/SYSTEM -I ../Libraries/CMSIS -I ../driver -I ../RTT -I ../MDK -I ../public/inc -I ../peripheral -I ../../cx2541-Lzb_gesture-I./RTE/_Porject-ID:/keil5/ARM/pack/ARM/CMSIS/6.1.0/CMSIS/Core/Include-D__UVISION_VERSION="540" -D_RTE_ -DUSE_STDPERIPH_DRIVER -DUSE_FULL_ASSERT-o ./out/pt32y003x_wdg.o -MMD)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_wdg.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x.h)(0x685DEAE0)
+I (..\Libraries\CMSIS\core_cm0.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32_Type.h)(0x685DEAE0)
+I (..\Libraries\SYSTEM\system_PT32Y003x.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_conf.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_gpio.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_tim.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_nvic.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_uart.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_pwm.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_i2c.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_spi.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_crc.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_immc.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_adc.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_pwr.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_rcc.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_id.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_exti.h)(0x685DEAE0)
+F (..\Libraries\PT32Y003x_FWLib\src\PT32Y003x_nvic.c)(0x685DEAE0)(-xc -std=c11 --target=arm-arm-none-eabi -mcpu=cortex-m0 -c-fno-rtti -flto -Werror -fsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -Oz -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../Libraries/PT32Y003x_FWLib/inc -I ../Libraries/SYSTEM -I ../Libraries/CMSIS -I ../driver -I ../RTT -I ../MDK -I ../public/inc -I ../peripheral -I ../../cx2541-Lzb_gesture-I./RTE/_Porject-ID:/keil5/ARM/pack/ARM/CMSIS/6.1.0/CMSIS/Core/Include-D__UVISION_VERSION="540" -D_RTE_ -DUSE_STDPERIPH_DRIVER -DUSE_FULL_ASSERT-o ./out/pt32y003x_nvic.o -MMD)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_nvic.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x.h)(0x685DEAE0)
+I (..\Libraries\CMSIS\core_cm0.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32_Type.h)(0x685DEAE0)
+I (..\Libraries\SYSTEM\system_PT32Y003x.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_conf.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_gpio.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_tim.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_uart.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_pwm.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_wdg.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_i2c.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_spi.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_crc.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_immc.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_adc.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_pwr.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_rcc.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_id.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_exti.h)(0x685DEAE0)
+F (..\Libraries\PT32Y003x_FWLib\src\PT32Y003x_it.c)(0x6939176D)(-xc -std=c11 --target=arm-arm-none-eabi -mcpu=cortex-m0 -c-fno-rtti -flto -Werror -fsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -Oz -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../Libraries/PT32Y003x_FWLib/inc -I ../Libraries/SYSTEM -I ../Libraries/CMSIS -I ../driver -I ../RTT -I ../MDK -I ../public/inc -I ../peripheral -I ../../cx2541-Lzb_gesture-I./RTE/_Porject-ID:/keil5/ARM/pack/ARM/CMSIS/6.1.0/CMSIS/Core/Include-D__UVISION_VERSION="540" -D_RTE_ -DUSE_STDPERIPH_DRIVER -DUSE_FULL_ASSERT-o ./out/pt32y003x_it.o -MMD)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_it.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x.h)(0x685DEAE0)
+I (..\Libraries\CMSIS\core_cm0.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32_Type.h)(0x685DEAE0)
+I (..\Libraries\SYSTEM\system_PT32Y003x.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_conf.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_gpio.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_tim.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_nvic.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_uart.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_pwm.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_wdg.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_i2c.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_spi.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_crc.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_immc.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_adc.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_pwr.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_rcc.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_id.h)(0x685DEAE0)
+I (..\Libraries\PT32Y003x_FWLib\inc\PT32Y003x_exti.h)(0x685DEAE0)
+I (..\..\cx2541-Lzb_gesture\base.h)(0x685DEAE0)

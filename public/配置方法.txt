@@ -1,0 +1,4 @@
+before build project
+..\..\..\public\beforeBuild.bat .\Listings
+after build project
+..\..\..\public\afterBuild.bat .\Listings !L
