@@ -45,7 +45,7 @@ int main (void) {
 			}
 		#else
 			static uint32_t slideTick = 0;
-			if (Tick_Passed(&slideTick, 5)) {
+			if (Tick_Passed(&slideTick, 3)) {
 				slide_task();
 			}
 		#endif	

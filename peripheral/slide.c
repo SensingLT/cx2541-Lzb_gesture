@@ -4,10 +4,10 @@
 #include "PT32Y003x.h"
 
 #define SLIDE_SDO_PORT 	GPIOC
-#define	SLIDE_SDO_PIN	GPIO_Pin_5
+#define	SLIDE_SDO_PIN	GPIO_Pin_3
 
 #define SLIDE_SCL_PORT 	GPIOC
-#define	SLIDE_SCL_PIN	GPIO_Pin_6
+#define	SLIDE_SCL_PIN	GPIO_Pin_4
 
 #define SLIDE_SCL_HIGH	GPIO_SetBits(SLIDE_SCL_PORT,SLIDE_SCL_PIN);
 #define SLIDE_SCL_LOW	GPIO_ResetBits(SLIDE_SCL_PORT,SLIDE_SCL_PIN);
@@ -16,7 +16,7 @@ void slide_init(void){
 	//SDO - 输入
 	GPIO_InitTypeDef GPIO_InitStructure;
     GPIO_InitStructure.GPIO_Mode = GPIO_Mode_In;
-    GPIO_InitStructure.GPIO_Pull = GPIO_Pull_Down;
+    GPIO_InitStructure.GPIO_Pull = GPIO_Pull_Up;
 	GPIO_InitStructure.GPIO_Pin  = SLIDE_SDO_PIN;
     GPIO_Init(SLIDE_SDO_PORT,&GPIO_InitStructure);
 	
@@ -40,7 +40,7 @@ static uint8_t slide_keyOut(void){
 		SLIDE_SCL_LOW;	
 		if(slide_readSDO() == RESET){
 			keys = i;
-			break;
+			//break;
 		}
 		SLIDE_SCL_HIGH;
 	}
@@ -83,7 +83,7 @@ static bool slide_checkPattern(slide_detector_t* detector) {
     }
     
     // 检查按键序列方向一致性
-    int directionSign = (detector->direction == SLIDE_TO_FORWARD) ? 1 : -1;
+    int directionSign = (detector->direction == SLIDE_TO_FORWARD) ? -1 : 1;
     int lastKey = detector->keySequence[0];
     
     for (int i = 1; i < detector->keyCount; i++) {
@@ -133,16 +133,16 @@ static bool slide_detectSlide(slide_detector_t* detector, uint8_t currentKey, ui
         
         // 确定滑动方向
         if (detector->keyCount == 1) {
-            detector->direction = (currentKey > detector->lastKey) ? 
+            detector->direction = (currentKey < detector->lastKey) ? 
                                  SLIDE_TO_FORWARD : 
                                  SLIDE_TO_BACKWARD;
         }
         
         // 检查方向是否一致
         bool directionOk = false;
-        if (detector->direction == SLIDE_TO_FORWARD && currentKey > detector->lastKey) {
+        if (detector->direction == SLIDE_TO_FORWARD && currentKey < detector->lastKey) {
             directionOk = true;
-        } else if (detector->direction == SLIDE_TO_BACKWARD && currentKey < detector->lastKey) {
+        } else if (detector->direction == SLIDE_TO_BACKWARD && currentKey > detector->lastKey) {
             directionOk = true;
         }
         
@@ -181,15 +181,16 @@ static void slide_checkTimeOut(slide_detector_t* detector, uint32_t currentTick)
     }
 }
 
-//冷却时间相关变量
-static bool coolingDown = false;        // 冷却状态标志
-static uint32_t coolDownStartTime = 0;  // 冷却开始时间
 #define  COOL_DOWN_PERIOD  100  		//1000ms冷却时间
-static bool keyPressed = false;  // 按键按下状态标志
-static uint8_t lastKey = 0;  // 记录上一次的按键值
+
 
 //滑动检测任务
 void slide_task(void){
+	
+	static bool coolingDown = false;        // 冷却状态标志
+	static uint32_t coolDownStartTime = 0;  // 冷却开始时间
+	static bool keyPressed = false;  // 按键按下状态标志
+	static uint8_t lastKey = 0;  // 记录上一次的按键值
 	//检查滑动检测超时
 	slide_checkTimeOut(&gSlideDetector,  Tick_Get());
 	

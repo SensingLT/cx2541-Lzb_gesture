@@ -3,10 +3,10 @@
 #include "PT32Y003x.h"
 
 #define CLAP_SDO_PORT 	GPIOC
-#define	CLAP_SDO_PIN	GPIO_Pin_5
+#define	CLAP_SDO_PIN	GPIO_Pin_3
 
 #define CLAP_SCL_PORT 	GPIOC
-#define	CLAP_SCL_PIN	GPIO_Pin_6
+#define	CLAP_SCL_PIN	GPIO_Pin_4
 
 #define CLAP_SCL_HIGH	GPIO_SetBits(CLAP_SCL_PORT,CLAP_SCL_PIN);
 #define CLAP_SCL_LOW	GPIO_ResetBits(CLAP_SCL_PORT,CLAP_SCL_PIN);
@@ -35,7 +35,7 @@ static uint8_t clap_keyOut(void) {
     static bool keyPressed = false;
     static uint8_t lastKey = 0;
     CLAP_SCL_HIGH;    
-    for(int i = 1; i <= 8; i++) {
+    for(int i = 1; i <= 9; i++) {
         CLAP_SCL_LOW;    
         if(clap_readSDO() == RESET) {
             keys = i;
