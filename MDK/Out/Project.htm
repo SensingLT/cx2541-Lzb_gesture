@@ -3,9 +3,9 @@
 <title>Static Call Graph - [.\Out\Project.axf]</title></head>
 <body><HR>
 <H1>Static Call Graph for image .\Out\Project.axf</H1><HR>
-<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 6220000: Last Updated: Tue Jan  6 17:00:45 2026
+<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 6220000: Last Updated: Tue Apr  7 16:24:40 2026
 <BR><P>
-<H3>Maximum Stack Usage =        112 bytes + Unknown(Cycles, Untraceable Function Pointers)</H3><H3>
+<H3>Maximum Stack Usage =        136 bytes + Unknown(Cycles, Untraceable Function Pointers)</H3><H3>
 Call chain for Maximum Stack Depth:</H3>
 main &rArr; NVIC_Init &rArr; assert_failed &rArr; Uart_SendStr &rArr; vsnprintf
 <P>
@@ -18,33 +18,33 @@ Mutually Recursive functions
 <H3>
 Function Pointers
 </H3><UL>
- <LI><a href="#[c]">ADC_Handler</a> from lto-llvm-bed8f7.o(.text.ADC_Handler) referenced from startup_pt32y003x.o(RESET)
- <LI><a href="#[8]">EXTIA_Handler</a> from lto-llvm-bed8f7.o(.text.EXTIA_Handler) referenced from startup_pt32y003x.o(RESET)
- <LI><a href="#[9]">EXTIB_Handler</a> from lto-llvm-bed8f7.o(.text.EXTIB_Handler) referenced from startup_pt32y003x.o(RESET)
- <LI><a href="#[a]">EXTIC_Handler</a> from lto-llvm-bed8f7.o(.text.EXTIC_Handler) referenced from startup_pt32y003x.o(RESET)
- <LI><a href="#[b]">EXTID_Handler</a> from lto-llvm-bed8f7.o(.text.EXTID_Handler) referenced from startup_pt32y003x.o(RESET)
- <LI><a href="#[19]">GPIO_DigitalRemapConfig</a> from lto-llvm-bed8f7.o(.text.GPIO_DigitalRemapConfig) referenced from lto-llvm-bed8f7.o(.text.main)
+ <LI><a href="#[c]">ADC_Handler</a> from lto-llvm-b7bd12.o(.text.ADC_Handler) referenced from startup_pt32y003x.o(RESET)
+ <LI><a href="#[8]">EXTIA_Handler</a> from lto-llvm-b7bd12.o(.text.EXTIA_Handler) referenced from startup_pt32y003x.o(RESET)
+ <LI><a href="#[9]">EXTIB_Handler</a> from lto-llvm-b7bd12.o(.text.EXTIB_Handler) referenced from startup_pt32y003x.o(RESET)
+ <LI><a href="#[a]">EXTIC_Handler</a> from lto-llvm-b7bd12.o(.text.EXTIC_Handler) referenced from startup_pt32y003x.o(RESET)
+ <LI><a href="#[b]">EXTID_Handler</a> from lto-llvm-b7bd12.o(.text.EXTID_Handler) referenced from startup_pt32y003x.o(RESET)
+ <LI><a href="#[19]">GPIO_DigitalRemapConfig</a> from lto-llvm-b7bd12.o(.text.GPIO_DigitalRemapConfig) referenced from lto-llvm-b7bd12.o(.text.main)
  <LI><a href="#[6]">HSEFAIL_Handler</a> from startup_pt32y003x.o(RESET) referenced from startup_pt32y003x.o(RESET)
- <LI><a href="#[2]">HardFault_Handler</a> from lto-llvm-bed8f7.o(.text.HardFault_Handler) referenced from startup_pt32y003x.o(RESET)
- <LI><a href="#[12]">I2C0_Handler</a> from lto-llvm-bed8f7.o(.text.I2C0_Handler) referenced from startup_pt32y003x.o(RESET)
- <LI><a href="#[7]">IMMC_Handler</a> from lto-llvm-bed8f7.o(.text.IMMC_Handler) referenced from startup_pt32y003x.o(RESET)
- <LI><a href="#[1]">NMI_Handler</a> from lto-llvm-bed8f7.o(.text.NMI_Handler) referenced from startup_pt32y003x.o(RESET)
- <LI><a href="#[11]">PVD_Handler</a> from lto-llvm-bed8f7.o(.text.PVD_Handler) referenced from startup_pt32y003x.o(RESET)
- <LI><a href="#[4]">PendSV_Handler</a> from lto-llvm-bed8f7.o(.text.PendSV_Handler) referenced from startup_pt32y003x.o(RESET)
+ <LI><a href="#[2]">HardFault_Handler</a> from lto-llvm-b7bd12.o(.text.HardFault_Handler) referenced from startup_pt32y003x.o(RESET)
+ <LI><a href="#[12]">I2C0_Handler</a> from lto-llvm-b7bd12.o(.text.I2C0_Handler) referenced from startup_pt32y003x.o(RESET)
+ <LI><a href="#[7]">IMMC_Handler</a> from lto-llvm-b7bd12.o(.text.IMMC_Handler) referenced from startup_pt32y003x.o(RESET)
+ <LI><a href="#[1]">NMI_Handler</a> from lto-llvm-b7bd12.o(.text.NMI_Handler) referenced from startup_pt32y003x.o(RESET)
+ <LI><a href="#[11]">PVD_Handler</a> from lto-llvm-b7bd12.o(.text.PVD_Handler) referenced from startup_pt32y003x.o(RESET)
+ <LI><a href="#[4]">PendSV_Handler</a> from lto-llvm-b7bd12.o(.text.PendSV_Handler) referenced from startup_pt32y003x.o(RESET)
  <LI><a href="#[0]">Reset_Handler</a> from startup_pt32y003x.o(RESET) referenced from startup_pt32y003x.o(RESET)
- <LI><a href="#[13]">SPI0_Handler</a> from lto-llvm-bed8f7.o(.text.SPI0_Handler) referenced from startup_pt32y003x.o(RESET)
- <LI><a href="#[3]">SVC_Handler</a> from lto-llvm-bed8f7.o(.text.SVC_Handler) referenced from startup_pt32y003x.o(RESET)
- <LI><a href="#[5]">SysTick_Handler</a> from lto-llvm-bed8f7.o(.text.SysTick_Handler) referenced from startup_pt32y003x.o(RESET)
- <LI><a href="#[16]">SystemInit</a> from lto-llvm-bed8f7.o(.text.SystemInit) referenced from startup_pt32y003x.o(RESET)
- <LI><a href="#[d]">TIM1_Handler</a> from lto-llvm-bed8f7.o(.text.TIM1_Handler) referenced from startup_pt32y003x.o(RESET)
- <LI><a href="#[10]">TIM2_Handler</a> from lto-llvm-bed8f7.o(.text.TIM2_Handler) referenced from startup_pt32y003x.o(RESET)
+ <LI><a href="#[13]">SPI0_Handler</a> from lto-llvm-b7bd12.o(.text.SPI0_Handler) referenced from startup_pt32y003x.o(RESET)
+ <LI><a href="#[3]">SVC_Handler</a> from lto-llvm-b7bd12.o(.text.SVC_Handler) referenced from startup_pt32y003x.o(RESET)
+ <LI><a href="#[5]">SysTick_Handler</a> from lto-llvm-b7bd12.o(.text.SysTick_Handler) referenced from startup_pt32y003x.o(RESET)
+ <LI><a href="#[16]">SystemInit</a> from lto-llvm-b7bd12.o(.text.SystemInit) referenced from startup_pt32y003x.o(RESET)
+ <LI><a href="#[d]">TIM1_Handler</a> from lto-llvm-b7bd12.o(.text.TIM1_Handler) referenced from startup_pt32y003x.o(RESET)
+ <LI><a href="#[10]">TIM2_Handler</a> from lto-llvm-b7bd12.o(.text.TIM2_Handler) referenced from startup_pt32y003x.o(RESET)
  <LI><a href="#[f]">TIM3_Handler</a> from startup_pt32y003x.o(RESET) referenced from startup_pt32y003x.o(RESET)
- <LI><a href="#[e]">TIM4_Handler</a> from lto-llvm-bed8f7.o(.text.TIM4_Handler) referenced from startup_pt32y003x.o(RESET)
- <LI><a href="#[14]">UART0_Handler</a> from lto-llvm-bed8f7.o(.text.UART0_Handler) referenced from startup_pt32y003x.o(RESET)
- <LI><a href="#[15]">UART1_Handler</a> from lto-llvm-bed8f7.o(.text.UART1_Handler) referenced from startup_pt32y003x.o(RESET)
+ <LI><a href="#[e]">TIM4_Handler</a> from lto-llvm-b7bd12.o(.text.TIM4_Handler) referenced from startup_pt32y003x.o(RESET)
+ <LI><a href="#[14]">UART0_Handler</a> from lto-llvm-b7bd12.o(.text.UART0_Handler) referenced from startup_pt32y003x.o(RESET)
+ <LI><a href="#[15]">UART1_Handler</a> from lto-llvm-b7bd12.o(.text.UART1_Handler) referenced from startup_pt32y003x.o(RESET)
  <LI><a href="#[17]">__main</a> from entry.o(.ARM.Collect$$$$00000000) referenced from startup_pt32y003x.o(RESET)
  <LI><a href="#[1a]">_snputc</a> from printfa.o(i._snputc) referenced from printfa.o(i.__0vsnprintf)
- <LI><a href="#[18]">main</a> from lto-llvm-bed8f7.o(.text.main) referenced from entry9a.o(.ARM.Collect$$$$0000000B)
+ <LI><a href="#[18]">main</a> from lto-llvm-b7bd12.o(.text.main) referenced from entry9a.o(.ARM.Collect$$$$0000000B)
 </UL>
 <P>
 <H3>
@@ -218,78 +218,78 @@ Global Symbols
 <BR><BR>[Calls]<UL><LI><a href="#[2c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memset
 </UL>
 
-<P><STRONG><a name="[c]"></a>ADC_Handler</STRONG> (Thumb, 48 bytes, Stack size 0 bytes, lto-llvm-bed8f7.o(.text.ADC_Handler))
+<P><STRONG><a name="[c]"></a>ADC_Handler</STRONG> (Thumb, 48 bytes, Stack size 0 bytes, lto-llvm-b7bd12.o(.text.ADC_Handler))
 <BR>[Address Reference Count : 1]<UL><LI> startup_pt32y003x.o(RESET)
 </UL>
-<P><STRONG><a name="[8]"></a>EXTIA_Handler</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, lto-llvm-bed8f7.o(.text.EXTIA_Handler))
+<P><STRONG><a name="[8]"></a>EXTIA_Handler</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, lto-llvm-b7bd12.o(.text.EXTIA_Handler))
 <BR>[Address Reference Count : 1]<UL><LI> startup_pt32y003x.o(RESET)
 </UL>
-<P><STRONG><a name="[9]"></a>EXTIB_Handler</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, lto-llvm-bed8f7.o(.text.EXTIB_Handler))
+<P><STRONG><a name="[9]"></a>EXTIB_Handler</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, lto-llvm-b7bd12.o(.text.EXTIB_Handler))
 <BR>[Address Reference Count : 1]<UL><LI> startup_pt32y003x.o(RESET)
 </UL>
-<P><STRONG><a name="[a]"></a>EXTIC_Handler</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, lto-llvm-bed8f7.o(.text.EXTIC_Handler))
+<P><STRONG><a name="[a]"></a>EXTIC_Handler</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, lto-llvm-b7bd12.o(.text.EXTIC_Handler))
 <BR>[Address Reference Count : 1]<UL><LI> startup_pt32y003x.o(RESET)
 </UL>
-<P><STRONG><a name="[b]"></a>EXTID_Handler</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, lto-llvm-bed8f7.o(.text.EXTID_Handler))
+<P><STRONG><a name="[b]"></a>EXTID_Handler</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, lto-llvm-b7bd12.o(.text.EXTID_Handler))
 <BR>[Address Reference Count : 1]<UL><LI> startup_pt32y003x.o(RESET)
 </UL>
-<P><STRONG><a name="[2]"></a>HardFault_Handler</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, lto-llvm-bed8f7.o(.text.HardFault_Handler))
+<P><STRONG><a name="[2]"></a>HardFault_Handler</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, lto-llvm-b7bd12.o(.text.HardFault_Handler))
 <BR><BR>[Calls]<UL><LI><a href="#[2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HardFault_Handler
 </UL>
 <BR>[Called By]<UL><LI><a href="#[2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HardFault_Handler
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> startup_pt32y003x.o(RESET)
 </UL>
-<P><STRONG><a name="[12]"></a>I2C0_Handler</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, lto-llvm-bed8f7.o(.text.I2C0_Handler))
+<P><STRONG><a name="[12]"></a>I2C0_Handler</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, lto-llvm-b7bd12.o(.text.I2C0_Handler))
 <BR>[Address Reference Count : 1]<UL><LI> startup_pt32y003x.o(RESET)
 </UL>
-<P><STRONG><a name="[7]"></a>IMMC_Handler</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, lto-llvm-bed8f7.o(.text.IMMC_Handler))
+<P><STRONG><a name="[7]"></a>IMMC_Handler</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, lto-llvm-b7bd12.o(.text.IMMC_Handler))
 <BR>[Address Reference Count : 1]<UL><LI> startup_pt32y003x.o(RESET)
 </UL>
-<P><STRONG><a name="[1]"></a>NMI_Handler</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, lto-llvm-bed8f7.o(.text.NMI_Handler))
+<P><STRONG><a name="[1]"></a>NMI_Handler</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, lto-llvm-b7bd12.o(.text.NMI_Handler))
 <BR>[Address Reference Count : 1]<UL><LI> startup_pt32y003x.o(RESET)
 </UL>
-<P><STRONG><a name="[11]"></a>PVD_Handler</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, lto-llvm-bed8f7.o(.text.PVD_Handler))
+<P><STRONG><a name="[11]"></a>PVD_Handler</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, lto-llvm-b7bd12.o(.text.PVD_Handler))
 <BR>[Address Reference Count : 1]<UL><LI> startup_pt32y003x.o(RESET)
 </UL>
-<P><STRONG><a name="[4]"></a>PendSV_Handler</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, lto-llvm-bed8f7.o(.text.PendSV_Handler))
+<P><STRONG><a name="[4]"></a>PendSV_Handler</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, lto-llvm-b7bd12.o(.text.PendSV_Handler))
 <BR>[Address Reference Count : 1]<UL><LI> startup_pt32y003x.o(RESET)
 </UL>
-<P><STRONG><a name="[13]"></a>SPI0_Handler</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, lto-llvm-bed8f7.o(.text.SPI0_Handler))
+<P><STRONG><a name="[13]"></a>SPI0_Handler</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, lto-llvm-b7bd12.o(.text.SPI0_Handler))
 <BR>[Address Reference Count : 1]<UL><LI> startup_pt32y003x.o(RESET)
 </UL>
-<P><STRONG><a name="[3]"></a>SVC_Handler</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, lto-llvm-bed8f7.o(.text.SVC_Handler))
+<P><STRONG><a name="[3]"></a>SVC_Handler</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, lto-llvm-b7bd12.o(.text.SVC_Handler))
 <BR>[Address Reference Count : 1]<UL><LI> startup_pt32y003x.o(RESET)
 </UL>
-<P><STRONG><a name="[5]"></a>SysTick_Handler</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, lto-llvm-bed8f7.o(.text.SysTick_Handler))
+<P><STRONG><a name="[5]"></a>SysTick_Handler</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, lto-llvm-b7bd12.o(.text.SysTick_Handler))
 <BR>[Address Reference Count : 1]<UL><LI> startup_pt32y003x.o(RESET)
 </UL>
-<P><STRONG><a name="[16]"></a>SystemInit</STRONG> (Thumb, 156 bytes, Stack size 16 bytes, lto-llvm-bed8f7.o(.text.SystemInit))
+<P><STRONG><a name="[16]"></a>SystemInit</STRONG> (Thumb, 156 bytes, Stack size 16 bytes, lto-llvm-b7bd12.o(.text.SystemInit))
 <BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = SystemInit
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> startup_pt32y003x.o(RESET)
 </UL>
-<P><STRONG><a name="[d]"></a>TIM1_Handler</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, lto-llvm-bed8f7.o(.text.TIM1_Handler))
+<P><STRONG><a name="[d]"></a>TIM1_Handler</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, lto-llvm-b7bd12.o(.text.TIM1_Handler))
 <BR>[Address Reference Count : 1]<UL><LI> startup_pt32y003x.o(RESET)
 </UL>
-<P><STRONG><a name="[10]"></a>TIM2_Handler</STRONG> (Thumb, 28 bytes, Stack size 0 bytes, lto-llvm-bed8f7.o(.text.TIM2_Handler))
+<P><STRONG><a name="[10]"></a>TIM2_Handler</STRONG> (Thumb, 28 bytes, Stack size 0 bytes, lto-llvm-b7bd12.o(.text.TIM2_Handler))
 <BR>[Address Reference Count : 1]<UL><LI> startup_pt32y003x.o(RESET)
 </UL>
-<P><STRONG><a name="[e]"></a>TIM4_Handler</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, lto-llvm-bed8f7.o(.text.TIM4_Handler))
+<P><STRONG><a name="[e]"></a>TIM4_Handler</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, lto-llvm-b7bd12.o(.text.TIM4_Handler))
 <BR>[Address Reference Count : 1]<UL><LI> startup_pt32y003x.o(RESET)
 </UL>
-<P><STRONG><a name="[14]"></a>UART0_Handler</STRONG> (Thumb, 76 bytes, Stack size 16 bytes, lto-llvm-bed8f7.o(.text.UART0_Handler))
+<P><STRONG><a name="[14]"></a>UART0_Handler</STRONG> (Thumb, 76 bytes, Stack size 16 bytes, lto-llvm-b7bd12.o(.text.UART0_Handler))
 <BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = UART0_Handler
 </UL>
 <BR>[Calls]<UL><LI><a href="#[31]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memclr4
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> startup_pt32y003x.o(RESET)
 </UL>
-<P><STRONG><a name="[15]"></a>UART1_Handler</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, lto-llvm-bed8f7.o(.text.UART1_Handler))
+<P><STRONG><a name="[15]"></a>UART1_Handler</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, lto-llvm-b7bd12.o(.text.UART1_Handler))
 <BR>[Address Reference Count : 1]<UL><LI> startup_pt32y003x.o(RESET)
 </UL>
-<P><STRONG><a name="[18]"></a>main</STRONG> (Thumb, 624 bytes, Stack size 40 bytes, lto-llvm-bed8f7.o(.text.main))
-<BR><BR>[Stack]<UL><LI>Max Depth = 112<LI>Call Chain = main &rArr; NVIC_Init &rArr; assert_failed &rArr; Uart_SendStr &rArr; vsnprintf
+<P><STRONG><a name="[18]"></a>main</STRONG> (Thumb, 940 bytes, Stack size 64 bytes, lto-llvm-b7bd12.o(.text.main))
+<BR><BR>[Stack]<UL><LI>Max Depth = 136<LI>Call Chain = main &rArr; NVIC_Init &rArr; assert_failed &rArr; Uart_SendStr &rArr; vsnprintf
 </UL>
 <BR>[Calls]<UL><LI><a href="#[30]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;NVIC_Init
 <LI><a href="#[2f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_Init
@@ -359,14 +359,14 @@ Local Symbols
 <P><STRONG><a name="[1a]"></a>_snputc</STRONG> (Thumb, 22 bytes, Stack size 0 bytes, printfa.o(i._snputc))
 <BR>[Address Reference Count : 1]<UL><LI> printfa.o(i.__0vsnprintf)
 </UL>
-<P><STRONG><a name="[34]"></a>Uart_SendData</STRONG> (Thumb, 52 bytes, Stack size 16 bytes, lto-llvm-bed8f7.o(.text.Uart_SendData))
+<P><STRONG><a name="[34]"></a>Uart_SendData</STRONG> (Thumb, 52 bytes, Stack size 16 bytes, lto-llvm-b7bd12.o(.text.Uart_SendData))
 <BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = Uart_SendData
 </UL>
 <BR>[Called By]<UL><LI><a href="#[18]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 <LI><a href="#[32]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Uart_SendStr
 </UL>
 
-<P><STRONG><a name="[32]"></a>Uart_SendStr</STRONG> (Thumb, 44 bytes, Stack size 24 bytes, lto-llvm-bed8f7.o(.text.Uart_SendStr))
+<P><STRONG><a name="[32]"></a>Uart_SendStr</STRONG> (Thumb, 44 bytes, Stack size 24 bytes, lto-llvm-b7bd12.o(.text.Uart_SendStr))
 <BR><BR>[Stack]<UL><LI>Max Depth = 48<LI>Call Chain = Uart_SendStr &rArr; vsnprintf
 </UL>
 <BR>[Calls]<UL><LI><a href="#[34]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Uart_SendData
@@ -375,7 +375,7 @@ Local Symbols
 <BR>[Called By]<UL><LI><a href="#[2e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;assert_failed
 </UL>
 
-<P><STRONG><a name="[2f]"></a>GPIO_Init</STRONG> (Thumb, 124 bytes, Stack size 8 bytes, lto-llvm-bed8f7.o(.text.GPIO_Init))
+<P><STRONG><a name="[2f]"></a>GPIO_Init</STRONG> (Thumb, 124 bytes, Stack size 8 bytes, lto-llvm-b7bd12.o(.text.GPIO_Init))
 <BR><BR>[Stack]<UL><LI>Max Depth = 56<LI>Call Chain = GPIO_Init &rArr; assert_failed &rArr; Uart_SendStr &rArr; vsnprintf
 </UL>
 <BR>[Calls]<UL><LI><a href="#[2e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;assert_failed
@@ -383,7 +383,7 @@ Local Symbols
 <BR>[Called By]<UL><LI><a href="#[18]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
 
-<P><STRONG><a name="[30]"></a>NVIC_Init</STRONG> (Thumb, 80 bytes, Stack size 24 bytes, lto-llvm-bed8f7.o(.text.NVIC_Init))
+<P><STRONG><a name="[30]"></a>NVIC_Init</STRONG> (Thumb, 80 bytes, Stack size 24 bytes, lto-llvm-b7bd12.o(.text.NVIC_Init))
 <BR><BR>[Stack]<UL><LI>Max Depth = 72<LI>Call Chain = NVIC_Init &rArr; assert_failed &rArr; Uart_SendStr &rArr; vsnprintf
 </UL>
 <BR>[Calls]<UL><LI><a href="#[2e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;assert_failed
@@ -391,14 +391,14 @@ Local Symbols
 <BR>[Called By]<UL><LI><a href="#[18]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
 
-<P><STRONG><a name="[19]"></a>GPIO_DigitalRemapConfig</STRONG> (Thumb, 56 bytes, Stack size 16 bytes, lto-llvm-bed8f7.o(.text.GPIO_DigitalRemapConfig))
+<P><STRONG><a name="[19]"></a>GPIO_DigitalRemapConfig</STRONG> (Thumb, 56 bytes, Stack size 16 bytes, lto-llvm-b7bd12.o(.text.GPIO_DigitalRemapConfig))
 <BR><BR>[Stack]<UL><LI>Max Depth = 64<LI>Call Chain = GPIO_DigitalRemapConfig &rArr; assert_failed &rArr; Uart_SendStr &rArr; vsnprintf
 </UL>
 <BR>[Calls]<UL><LI><a href="#[2e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;assert_failed
 </UL>
-<BR>[Address Reference Count : 1]<UL><LI> lto-llvm-bed8f7.o(.text.main)
+<BR>[Address Reference Count : 1]<UL><LI> lto-llvm-b7bd12.o(.text.main)
 </UL>
-<P><STRONG><a name="[2e]"></a>assert_failed</STRONG> (Thumb, 10 bytes, Stack size 0 bytes, lto-llvm-bed8f7.o(.text.assert_failed))
+<P><STRONG><a name="[2e]"></a>assert_failed</STRONG> (Thumb, 10 bytes, Stack size 0 bytes, lto-llvm-b7bd12.o(.text.assert_failed))
 <BR><BR>[Stack]<UL><LI>Max Depth = 48<LI>Call Chain = assert_failed &rArr; Uart_SendStr &rArr; vsnprintf
 </UL>
 <BR>[Calls]<UL><LI><a href="#[32]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Uart_SendStr

@@ -35,7 +35,7 @@ static uint8_t clap_keyOut(void) {
     static bool keyPressed = false;
     static uint8_t lastKey = 0;
     CLAP_SCL_HIGH;    
-    for(int i = 1; i <= 9; i++) {
+    for(int i = 1; i <= 8; i++) {
         CLAP_SCL_LOW;    
         if(clap_readSDO() == RESET) {
             keys = i;
@@ -64,86 +64,110 @@ static uint8_t clap_keyOut(void) {
 	return 0; // 无按键状态
 }
 
+
+// 放宽连拍检测参数 - 1tick = 5ms
+#define MULTI_PRESS_TIMEOUT_TICK   150  // 连拍超时时间（750毫秒）
+#define MULTI_PRESS_INTERVAL_TICK  10  // 连拍最小间隔时间（100毫秒）
+
+
 typedef struct {
     uint8_t count;              // 当前连拍计数
     uint32_t firstPressTick;   // 第一次按键时间
     uint32_t lastPressTick;    // 最后一次按键时间
-    bool detecting;             // 是否在检测连拍
-    uint8_t lastDetectedKey;    // 最后检测到的按键
+    uint8_t lastDetectedKey;   // 最后检测到的按键
+    bool active;               // 检测是否活跃
 } clap_multi_detector_t;
 
 static clap_multi_detector_t multiDetector = {0};
 
-// 连拍检测参数 - 1tick = 10ms
-#define MULTI_PRESS_TIMEOUT_TICK   40  // 连拍超时时间（400毫秒）
-#define MULTI_PRESS_INTERVAL_TICK  20  // 连拍最小间隔时间（200毫秒）
 
-
+// 重置检测器
 static void resetMultiPressDetector(void) {
     multiDetector.count = 0;
-    multiDetector.detecting = false;
+    multiDetector.active = false;
     multiDetector.lastDetectedKey = 0;
 }
-
-// 连拍检测函数
 static clap_count_e detectMultiPress(uint8_t currentKey, uint32_t currentTick) {
-    if (currentKey == 0) {
-        // 没有按键，检查是否超时
-        if (multiDetector.detecting) {
-            uint32_t timeDiff = currentTick - multiDetector.lastPressTick;
-            if (timeDiff > MULTI_PRESS_TIMEOUT_TICK) {
-                // 超时，返回当前计数
-                uint8_t result = multiDetector.count;
-                if (result >= 2 && result <= 3) {
-                } else if (result > 3) {
-                    result = 0; // 超过3次判断为无效
+    static uint32_t lastReleaseTick = 0;
+    static uint8_t pressCount = 0;
+    static uint32_t firstPressTick = 0;
+    
+    if (currentKey != 0) {
+        // 按键按下
+        if (pressCount == 0) {
+            // 第一次按下
+            firstPressTick = currentTick;
+            pressCount = 1;
+            DBG_LN("First press, count=1, key=%d", currentKey);
+        } 
+        else {
+            // 检查是否有效连拍
+            uint32_t timeSinceLastPress = currentTick - lastReleaseTick;
+            
+            if (timeSinceLastPress < MULTI_PRESS_INTERVAL_TICK) {
+                // 间隔太短，认为是抖动
+                DBG_LN("Press too fast, ignored. Interval: %d ticks", timeSinceLastPress);
+                return CLAP_ZERO;
+            }
+            
+            if (timeSinceLastPress > MULTI_PRESS_TIMEOUT_TICK) {
+                // 超时，重新开始计数
+                DBG_LN("Timeout, reset to 1. Time since last: %d ticks", timeSinceLastPress);
+                pressCount = 1;
+                firstPressTick = currentTick;
+            } 
+            else {
+                // 有效连拍（允许不同按键）
+                pressCount++;
+                if (pressCount > CLAP_TRIPLE) {
+                    pressCount = CLAP_TRIPLE;
                 }
-                resetMultiPressDetector();
-                return (clap_count_e)result;
+                DBG_LN("Multi-press, count=%d, key=%d", pressCount, currentKey);
             }
         }
+        
+        // 更新释放时间
+        lastReleaseTick = currentTick;
         return CLAP_ZERO;
+    } 
+    else {
+        // 按键释放
+        if (pressCount > 0) {
+            // 检查是否超时
+            uint32_t timeSinceFirstPress = currentTick - firstPressTick;
+            
+            if (timeSinceFirstPress > MULTI_PRESS_TIMEOUT_TICK) {
+                // 拍击完成
+                clap_count_e result = (clap_count_e)pressCount;
+                if (result > CLAP_TRIPLE) {
+                    result = CLAP_TRIPLE;
+                }
+                
+                // 检查是否真的完成（等待一小段时间确认没有新拍击）
+                uint32_t timeSinceLastPress = currentTick - lastReleaseTick;
+                if (timeSinceLastPress < MULTI_PRESS_INTERVAL_TICK) {
+                    // 距离上次按下的时间还太短，再等等
+                    DBG_LN("Waiting for more presses...");
+                    return CLAP_ZERO;
+                }
+                
+                DBG_LN("Final result: %d, total time: %d ticks", result, timeSinceFirstPress);
+                pressCount = 0;
+                return result;
+            }
+        }
     }
     
-    // 有按键按下
-    if (!multiDetector.detecting) {
-        // 开始新的连拍检测
-        multiDetector.count = 1;
-        multiDetector.firstPressTick = currentTick;
-        multiDetector.lastPressTick = currentTick;
-        multiDetector.detecting = true;
-        multiDetector.lastDetectedKey = currentKey;
-        return CLAP_ZERO;
-    } else {
-        uint32_t timeDiff = currentTick - multiDetector.lastPressTick;
-        
-        if (timeDiff < MULTI_PRESS_INTERVAL_TICK) {
-            return CLAP_ZERO;
-        }
-        
-        if (timeDiff > MULTI_PRESS_TIMEOUT_TICK) {
-            // 超时，重新开始计数
-            multiDetector.count = 1;
-            multiDetector.firstPressTick = currentTick;
-            multiDetector.lastDetectedKey = currentKey;
-        } else {
-            // 有效连拍，增加计数
-            multiDetector.count++;
-            multiDetector.lastDetectedKey = currentKey;
-        }
-        multiDetector.lastPressTick = currentTick;
-        return CLAP_ZERO;
-    }
+    return CLAP_ZERO;
 }
 
 void clap_task(void){
 	/******************连拍逻辑**********************/
-			uint8_t clapKey = clap_keyOut();
-			uint32_t currentTick = Tick_Get();
-			// 检测连拍
-			clap_count_e multiPress = detectMultiPress(clapKey, currentTick);
-			if(multiPress){
-				reportClapStatus(multiPress);
-			}
-
+	uint8_t clapKey = clap_keyOut();
+	uint32_t currentTick = Tick_Get();
+	// 检测连拍
+	clap_count_e multiPress = detectMultiPress(clapKey, currentTick);
+	if(multiPress){
+		reportClapStatus(multiPress);
+	}
 }

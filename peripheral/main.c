@@ -40,28 +40,15 @@ int main (void) {
 	while (1) {	
 		#if(DETECT_MODE > 0)
 			static uint32_t clapTick = 0;
-			if (Tick_Passed(&clapTick, 5)) {
+			if (Tick_Passed(&clapTick, 10)) {//100ms
 				clap_task();
 			}
 		#else
 			static uint32_t slideTick = 0;
-			if (Tick_Passed(&slideTick, 3)) {
+			if (Tick_Passed(&slideTick, 1)) {//5ms
 				slide_task();
 			}
 		#endif	
-		
-//		static uint32_t dbgTick = 0;
-//		if (Tick_Passed(&dbgTick, 1)) {
-//			int msgLen = Uart_GetRevMsg(revMsg, UART_MAX_REV_LEN);
-//			if (msgLen > 0) {
-//				if (!Protocol_HandleMsg(revMsg, msgLen)) {
-//					if (msgLen < UART_MAX_REV_LEN) {
-//						revMsg[msgLen] = 0;
-//					}
-//					DBG_LN("unhandled msg[len = %d]: %s", msgLen, revMsg);
-//				}
-//			}
-//		}
 		Wdg_Feed();
 	}
 }
